@@ -41,10 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Perform an action (attack, heal, nerf, boost)
     function performAction(actionType, target) {
-        fetch("/action", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ action_type: actionType, target: target }),
+        fetch("https://ton-api-flask.onrender.com/action", { ... });
+,
         })
             .then((response) => response.json())
             .then((data) => {
