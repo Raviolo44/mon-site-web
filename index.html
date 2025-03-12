@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Battle</title>
+    
+    <link rel="stylesheet" href="/templates/CSS.css">
+</head>
+<body>
+    <h1>Pokémon Battle</h1>
+    <div class="battle-container">
+        <div class="pokemon" id="pokemon1-container">
+            <h2 id="pokemon1-name"></h2>
+            <img id="pokemon1-image" src="/static/25.png" alt="">
+            <p>HP: <span id="pokemon1-hp"></span></p>
+        </div>
+        <div class="pokemon" id="pokemon2-container">
+            <h2 id="pokemon2-name"></h2>
+            <img id="pokemon2-image" src="/static/4.png" alt="">
+            <p>HP: <span id="pokemon2-hp"></span></p>
+        </div>
+    </div>
+    <div class="actions">
+        <h3>Actions for Pokémon 1</h3>
+        <button id="pokemon1-attack">Attack</button>
+        <button id="pokemon1-heal">Heal</button>
+        <button id="pokemon1-nerf">Nerf</button>
+        <button id="pokemon1-boost">Boost</button>
+
+        <h3>Actions for Pokémon 2</h3>
+        <button id="pokemon2-attack">Attack</button>
+        <button id="pokemon2-heal">Heal</button>
+        <button id="pokemon2-nerf">Nerf</button>
+        <button id="pokemon2-boost">Boost</button>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
